@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EntropyAssignment</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+  
+  <%= render 'layouts/navbar'%>
+  <% flash.each do |type, msg| %>
+    <div>
+      <%msg.keys.each do |i| %>
+        <ul>
+          <li><%msg[i].each do |k|%>
+            <%=k%>,
+          <%end%>
+          </li>
+        </ul>
+      <%end%>
+    </div>
+  <% end %>
+  <body>
+    <%= yield %>
+  </body>
+</html>

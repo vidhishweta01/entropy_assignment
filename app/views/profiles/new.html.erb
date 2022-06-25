@@ -1,0 +1,9 @@
+<h2>Create Profile</h2>
+<%= form_for(@profile, url: profile_path, method: :post) do |f|%>
+  First name: <%= f.text_field :first_name %>
+  Last name : <%= f.text_field :last_name %>
+  Country code: <%=f.text_field :country_code%>
+  Phone number: <%=f.text_field :phone_number%>
+  <%=f.hidden_field :user_id, value: current_user.id%>
+  <%=f.submit%>
+<%end%>
