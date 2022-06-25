@@ -11,20 +11,7 @@
   </head>
   
   <%= render 'layouts/navbar'%>
-  <% flash.each do |type, msg| %>
-    <div>
-      <%msg.keys.each do |i| %>
-        <ul>
-          <li>
-          <%= i %>:
-          <%msg[i].each do |k|%>
-            <%= k%>,
-          <%end%>
-          </li>
-        </ul>
-      <%end%>
-    </div>
-  <% end %>
+  
   <body class="bg-secodary">
     <%= yield %>
   </body>
