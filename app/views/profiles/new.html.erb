@@ -1,9 +1,9 @@
-<h2>Create Profile</h2>
-<%= form_for(@profile, url: profile_path, method: :post) do |f|%>
-  First name: <%= f.text_field :first_name %>
-  Last name : <%= f.text_field :last_name %>
-  Country code: <%=f.text_field :country_code%>
-  Phone number: <%=f.text_field :phone_number%>
+<h2 class="text-center">Create Profile</h2><br><br>
+<div style="margin-left: 55vh;"><%= form_for(@profile, url: profile_path, method: :post) do |f|%>
+  First name: <%= f.text_field :first_name, class: "form-control w-50" %><br><br>
+  Last name : <%= f.text_field :last_name, class: "form-control w-50" %><br><br>
+  Country code: <%=f.text_field :country_code, class: "form-control w-50" %><br><br>
+  Phone number: <%=f.text_field :phone_number, class: "form-control w-50" %><br><br>
   <%=f.hidden_field :user_id, value: current_user.id%>
   <%=f.submit%>
-<%end%>
+<%end%></div>
