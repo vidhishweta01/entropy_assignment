@@ -1,24 +1,68 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Built With
 
-Things you may want to cover:
+- Ruby v3.0.0
+- Ruby on Rails v7.0.3
 
-* Ruby version
+## Live Demo
+https://entropy-assignment.herokuapp.com/users/sign_up
 
-* System dependencies
 
-* Configuration
+## Getting Started
 
-* Database creation
+To get a local copy up and running follow these simple example steps.
 
-* Database initialization
+### Prerequisites
 
-* How to run the test suite
+Ruby: 3.0.0
+Rails: 7.0.3
 
-* Services (job queues, cache servers, search engines, etc.)
+### Setup
 
-* Deployment instructions
+Install gems with:
 
-* ...
+```
+bundle install --path vendor/bundle
+```
+
+Setup database with:
+
+```
+   rails db:create
+   rails db:migrate
+```
+
+### Usage
+
+Start server with:
+
+```
+    rails s
+```
+
+Open `http://localhost:3000/` in your browser.
+
+## Authors
+
+👤 **Author**
+
+- GitHub: [@ShwetaSrivastava](https://github.com/vidhishweta01)
+- Twitter: [@ShwetaSrivastava](https://twitter.com/vidhishweta01)
+- LinkedIn: [ShwetaSrivastava](https://www.linkedin.com/in/vidhishweta01/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+-
