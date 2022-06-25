@@ -11,7 +11,7 @@ class ProfilesController < ApplicationController
       redirect_to root_path
     else
       @message = @profile.errors.messages
-      format.html { redirect_to new_profile_path, alert: @message }
+      redirect_to new_profile_path, alert: @message
     end
   end
 

@@ -15,8 +15,10 @@
     <div>
       <%msg.keys.each do |i| %>
         <ul>
-          <li><%msg[i].each do |k|%>
-            <%=k%>,
+          <li>
+          <%= i %>:
+          <%msg[i].each do |k|%>
+            <%= k%>,
           <%end%>
           </li>
         </ul>
