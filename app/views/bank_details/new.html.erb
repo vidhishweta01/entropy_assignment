@@ -1,8 +1,8 @@
-<h2>Enter Bank Details</h2>
-<%= form_for(@bank_detail, url: bank_detail_path) do |f|%>
-  Account Number: <%= f.text_field :account_number %>
-  IFSC: <%= f.text_field :ifsc_code %>
-  Swift: <%=f.text_field :swift_code%>
+<h2 class="text-center">Enter Bank Details</h2>
+<div style="margin-left: 55vh;"><%= form_for(@bank_detail, url: bank_detail_path) do |f|%>
+  Account Number: <%= f.text_field :account_number, class: "form-control w-50" %><br><br>
+  IFSC: <%= f.text_field :ifsc_code, class: "form-control w-50" %><br><br>
+  Swift: <%=f.text_field :swift_code, class: "form-control w-50" %><br><br>
   <%=f.hidden_field :user_id, value: current_user.id%>
   <%=f.submit%>
-<%end%>
+<%end%></div>
